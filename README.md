@@ -1,3 +1,3 @@
 # Rock-Paper-Scissor
-It's a rock paper scissor game
+It's a Rock Paper Scissor game.
 -The Odin Project
