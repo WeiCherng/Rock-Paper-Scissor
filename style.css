@@ -12,6 +12,11 @@ h2 {
     color: #edf6f9;
     font-weight: 900;
 }
+h3 {
+    color: #006d77;
+    font-weight: 900;
+    margin: 0;
+}
 .content {
     display: flex;
     align-items: center;
@@ -39,6 +44,38 @@ h2 {
 .btn:active {
     background-color: #ffddd2;
     color: #e29578;
+}
+.clear {
+    background-color: #e29578;
+    color: #ffddd2;
+}
+.scoreTitle {
+    color: #edf6f9;
+    font-weight: 900;
+    font-size: 24px;
+    margin: 12px 0;
+}
+.scoreCont {
+    display: flex;
+}
+.score {
+    background-color: #edf6f9;
+    min-width: 60px;
+    height: 80px;
+    margin: 0 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #006d77;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 52px;
+}
+.win {
+    color: #38b000;
+}
+.lose {
+    color: #e63946;
 }
 
 @media (max-width: 575px) {
