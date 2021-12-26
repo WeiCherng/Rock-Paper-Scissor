@@ -1,10 +1,7 @@
-const game = () => {
-  for (let i = 0; i < 5; i++) {
-    const playerSelection = playerPlay();
+const game = (playerSelection) => {
+    // const playerSelection = playerPlay();
     const computerSelection = computerPlay();
-    console.log(playRound(playerSelection, computerSelection));
-    console.log(playerSelection, computerSelection)
-  }
+    return (playRound(playerSelection, computerSelection));
 };
 
 const playRound = (playerSelection, computerSelection) => {
@@ -62,4 +59,23 @@ const playerPlay = () => {
   }
 };
 
-game();
+// game();
+const paper = document.querySelector(".paper");
+const rock = document.querySelector(".rock");
+const scissor = document.querySelector(".scissor");
+const output = document.querySelector("#output");
+
+paper.addEventListener('click', function(e) {
+  const string = game('Paper');
+  output.innerHTML = string
+})
+rock.addEventListener('click', function(e) {
+  const string = game('Rock')
+  output.innerHTML = string
+})
+scissor.addEventListener('click', function(e) {
+  const string = game('Scissor')
+  output.innerHTML = string
+})
+
+
